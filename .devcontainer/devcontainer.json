@@ -35,7 +35,7 @@
 	// "forwardPorts": [9000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -r requirements.txt",
+	"postCreateCommand": "/usr/local/python/current/bin/python -m pip install -r requirements.txt",
 
 	// ensure vscode user is used by default
 	"remoteUser": "vscode"
