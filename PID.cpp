@@ -18,8 +18,14 @@ void PID::coeff(double kp, double ki, double kd)
 }
 
 
-// TODO: implement feedforward logic using theta
+// super basic pid control
 double PID::feedforward(double theta)
 {
-    return 0.0;
+	double error = theta - _setpoint;
+	
+	_integrator += error * _timestep;
+	double diff = (error - _prevError) / _timestep;
+
+	// pid control
+	return _kp * error + _integrator + diff;
 }
