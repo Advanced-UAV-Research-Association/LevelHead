@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,c++,cmake,python,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,c++,cmake,python,jupyternotebooks
 
+# compilation directory
+bin/
+
 ### C++ ###
 # Prerequisites
 *.d
