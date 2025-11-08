@@ -31,7 +31,6 @@
 			"upgradePackages": "true"
 		},
 		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers-extra/features/cmake:1": {},
 		"ghcr.io/devcontainers/features/python:1": {}
 	},
 
