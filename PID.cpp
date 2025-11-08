@@ -1,12 +1,12 @@
 #include "PID.h"
 
 
-PID::PID(double Ts): _Ts{Ts} {}
+PID::PID(double timestep): _timestep{timestep} {}
 
 
-void PID::setpoint(double theta_s)
+void PID::setpoint(double setpoint)
 {
-    _theta_s = theta_s;
+    _setpoint = setpoint;
 }
 
 

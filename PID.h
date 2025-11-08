@@ -4,9 +4,9 @@
 class PID
 {
 	public:
-		explicit PID(double Ts);
+		explicit PID(double timestep);
 
-		void setpoint(double theta_s);
+		void setpoint(double setpoint);
 		void coeff(double kp, double ki, double kd);
 		double feedforward(double theta);
 
@@ -15,8 +15,8 @@ class PID
 		double _ki{0.0};
 		double _kd{0.0};
 
-		double _Ts{0.0};
-		double _theta_s{0.0};
+		double _timestep{0.0};
+		double _setpoint{0.0};
 };
 
 #endif // PID_H
